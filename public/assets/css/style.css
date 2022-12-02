@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+  body
+  {
+  /*  background-color: #ffffff;*/
+  /*background-image: linear-gradient(315deg, #ffffff 0%, #83eaf1 74%);*/
+  
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  }
+  h3,h5{
+    text-align: center;
+  }
+  header{
+    margin-bottom: 20px;
+  }
+  i{
+    margin-right: 5px;
+  }
+  .required:after {
+      content:" *";
+      color: red;
+    }
+  
+    input[type=checkbox] + label {
+      display: block;
+      margin: 0.2em;
+      cursor: pointer;
+      padding: 0.2em;
+    }
+    
+    input[type=checkbox] {
+      display: none;
+    }
+  
+    input[type=checkbox] + label:before {
+      content: "\f00c";
+      font-family: "Font Awesome 5 Pro";
+      border: 0.1em solid #000;
+      border-radius: 0.2em;
+      display: inline-block;
+      width: 1.5em;
+      height: 1.6em;
+      vertical-align: bottom;
+      color: transparent;
+      transition: .2s;
+    }
+    
+    input[type=checkbox] + label:active:before {
+      transform: scale(0);
+    }
+    
+    input[type=checkbox]:checked + label:before {
+      background-color: #42378f !important;
+      border-color: #d2d6ff !important;
+      color: #fff !important;
+    }
+  
+  .form-group{
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  .card{
+    margin: 15px 30px;
+    /* background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  }
+  .card-header{
+    background-color: #42378f;
+  background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+  
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .card-body{
+    padding:0 1.5rem 2rem 1.5rem !important ;
+  }
+  
+  .error {
+    color: red; /* For JQuery Plugin*/
+  }
+  .butn{
+    margin: 10px;
+    font-weight: bold;
+  }
+
+  input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+  }
